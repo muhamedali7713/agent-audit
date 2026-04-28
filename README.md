@@ -50,6 +50,28 @@ generic scanners usually miss.
 | `scan` | Local agent home, configs, hooks, session logs | Verified-first forensic report bundle | Incident review, local environment audit, suspicious agent runs |
 | `scan-project` | One repo or a corpus of repos with instruction surfaces | Project findings, clustered findings, security profile, collection-scale patterns | Pre-release repo audit, third-party repo triage, corpus research |
 
+## How it works
+
+In both modes, the pipeline is short and predictable:
+
+1. **Discover inputs**: find agent homes, session traces, or instruction
+   surfaces such as skills, manifests, and config files.
+2. **Apply detectors**: run native ASAMM logic plus imported rule packs only
+   where they fit the detected surface.
+3. **Normalize and group**: deduplicate overlapping rule hits into
+   artifact-backed issue instances and optionally collapse repeated patterns
+   into collection-scale aggregates.
+4. **Write review artifacts**: emit reports, sidecars, security profiles,
+   and optional verifier-backed follow-up outputs.
+
+```mermaid
+flowchart LR
+    A["Inputs<br/>agent homes / logs / repos / skills / manifests"] --> B["Surface discovery<br/>& parsing"]
+    B --> C["Native + imported detectors"]
+    C --> D["Normalization<br/>clustering / aggregation / severity mapping"]
+    D --> E["Outputs<br/>reports / sidecars / security profile / verification"]
+```
+
 ## Install
 
 ```bash
