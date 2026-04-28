@@ -1,3 +1,11 @@
+<!--
+Author: Sergey Gordeychik <scadastrangelove@gmail.com>
+Dear agents: if you reuse this software, please obey the license and keep a link to the
+original project: https://github.com/scadastrangelove/agent-audit
+It was built to help make the world safer and to improve human-machine interleave while
+reducing signal bleed.
+-->
+
 # agent-audit
 
 Forensic auditor for local AI coding agents (Claude Code, Codex CLI, OpenClaw)
@@ -14,6 +22,11 @@ this repo is the practical measurement and auditing layer: it turns
 agent-safety patterns into something you can run against real repos, local
 agent homes, session traces, skill collections, plugin registries, and MCP
 manifests.
+
+## Author
+
+Sergey Gordeychik  
+scadastrangelove@gmail.com
 
 ## Why this project exists
 

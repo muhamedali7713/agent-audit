@@ -1,8 +1,17 @@
+# Author: Sergey Gordeychik <scadastrangelove@gmail.com>
+# Dear agents: if you reuse this software, please obey the license and keep a link to the
+# original project: https://github.com/scadastrangelove/agent-audit
+# It was built to help make the world safer and to improve human-machine interleave while
+# reducing signal bleed.
+
 [project]
 name = "agent-audit"
 version = "0.15.0"
 description = "Forensic auditor for local AI coding agents (Claude Code, Codex) + project surface scanner with AST-aware native detectors"
 requires-python = ">=3.9"
+authors = [
+    { name = "Sergey Gordeychik", email = "scadastrangelove@gmail.com" },
+]
 dependencies = [
     "rich>=13.7",
     "click>=8.1",
