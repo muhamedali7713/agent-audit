@@ -26,7 +26,7 @@
   - `CONTRIBUTING.md`
 - added minimal GitHub Actions CI
 
-## Previous History
+## Historical Notes
 
-Historical iteration notes remain in `README.md` and project docs from the
-research phase. They can be split further in a later documentation cleanup.
+Detailed pre-`0.15.0` iteration notes were moved out of the README to
+[docs/HISTORICAL_CHANGELOG.md](docs/HISTORICAL_CHANGELOG.md).
