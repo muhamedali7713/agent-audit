@@ -1,0 +1,22 @@
+{
+  "dataset_name": "article-support-dataset-v1",
+  "generated_on": "2026-04-29",
+  "records": {
+    "repositories": 509,
+    "repo_metadata": 509,
+    "repo_analysis_rows": 509,
+    "verification_master_records": 402,
+    "adjudication_master_records": 54,
+    "trio_merged_records": 54
+  },
+  "sanitization": {
+    "local_roots_replaced": [
+      "<corpus>",
+      "<analysis-workspace>",
+      "<agent-audit-repo>",
+      "<workspace>"
+    ],
+    "repo_names_preserved": true,
+    "origin_urls_preserved": true
+  }
+}

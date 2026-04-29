@@ -1,0 +1,20 @@
+{
+  "generated_from": "scan-project 509-repository corpus run",
+  "repos_scanned": 509,
+  "files_scanned": 20241,
+  "raw_findings_medium_plus": 4882,
+  "clustered_issue_instances": 4637,
+  "native_findings": 88,
+  "top_1pct_share_findings": 0.63226,
+  "top_10pct_share_findings": 0.90008,
+  "gini_findings": 0.94,
+  "gini_clustered_issues": 0.94,
+  "top_canonical_classes": [
+    "autonomous_execution_or_looping",
+    "unsafe_command_or_execution_surface",
+    "prompt_or_instruction_override_surface",
+    "agent_role_or_goal_manipulation",
+    "remote_fetch_or_install_expands_trust_boundary"
+  ],
+  "notes": "Summary-only public bundle; repo-path-heavy raw sidecars intentionally omitted."
+}

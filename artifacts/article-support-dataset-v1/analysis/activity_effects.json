@@ -1,0 +1,42 @@
+{
+  "0-30d": {
+    "repos": 404,
+    "native_repo_rate": 0.05198019801980198,
+    "clustered_issue_repo_rate": 0.41089108910891087,
+    "collection_scale_rate": 0.15841584158415842,
+    "median_findings_per_repo": 0.0,
+    "median_cluster_issues_per_repo": 0.0
+  },
+  "31-90d": {
+    "repos": 71,
+    "native_repo_rate": 0.014084507042253521,
+    "clustered_issue_repo_rate": 0.15492957746478872,
+    "collection_scale_rate": 0.08450704225352113,
+    "median_findings_per_repo": 0,
+    "median_cluster_issues_per_repo": 0
+  },
+  "91-180d": {
+    "repos": 21,
+    "native_repo_rate": 0.0,
+    "clustered_issue_repo_rate": 0.19047619047619047,
+    "collection_scale_rate": 0.047619047619047616,
+    "median_findings_per_repo": 0,
+    "median_cluster_issues_per_repo": 0
+  },
+  "181-365d": {
+    "repos": 9,
+    "native_repo_rate": 0.0,
+    "clustered_issue_repo_rate": 0.0,
+    "collection_scale_rate": 0.0,
+    "median_findings_per_repo": 0,
+    "median_cluster_issues_per_repo": 0
+  },
+  "365d+": {
+    "repos": 4,
+    "native_repo_rate": 0.0,
+    "clustered_issue_repo_rate": 0.25,
+    "collection_scale_rate": 0.0,
+    "median_findings_per_repo": 0.0,
+    "median_cluster_issues_per_repo": 0.0
+  }
+}

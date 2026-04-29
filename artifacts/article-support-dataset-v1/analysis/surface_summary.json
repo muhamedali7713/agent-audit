@@ -1,0 +1,50 @@
+{
+  "instruction_file": {
+    "repos": 418,
+    "rate": 0.8212180746561886
+  },
+  "AGENTS.md": {
+    "repos": 264,
+    "rate": 0.518664047151277
+  },
+  "skill_md": {
+    "repos": 261,
+    "rate": 0.5127701375245579
+  },
+  "SKILL.md": {
+    "repos": 261,
+    "rate": 0.5127701375245579
+  },
+  "CLAUDE.md": {
+    "repos": 246,
+    "rate": 0.48330058939096265
+  },
+  "plugin_manifest": {
+    "repos": 78,
+    "rate": 0.15324165029469547
+  },
+  "mcp_manifest": {
+    "repos": 58,
+    "rate": 0.11394891944990176
+  },
+  "copilot-instructions.md": {
+    "repos": 57,
+    "rate": 0.11198428290766209
+  },
+  "GEMINI.md": {
+    "repos": 27,
+    "rate": 0.05304518664047151
+  },
+  "tool_description": {
+    "repos": 21,
+    "rate": 0.0412573673870334
+  },
+  "agent_task_config": {
+    "repos": 2,
+    "rate": 0.003929273084479371
+  },
+  "COPILOT.md": {
+    "repos": 1,
+    "rate": 0.0019646365422396855
+  }
+}

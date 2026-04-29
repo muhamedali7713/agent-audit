@@ -1,0 +1,199 @@
+{
+  "records_total": 54,
+  "label_counts_by_reviewer": {
+    "reviewer1": {
+      "FP": 17,
+      "TP": 34,
+      "UNCERTAIN": 3
+    },
+    "reviewer2": {
+      "FP": 27,
+      "TP": 26,
+      "UNCERTAIN": 1
+    },
+    "reviewer3": {
+      "UNCERTAIN": 8,
+      "FP": 25,
+      "TP": 21
+    }
+  },
+  "pairwise": {
+    "reviewer1_vs_reviewer2": {
+      "agreement": 0.8148148148148148,
+      "kappa": 0.6560509554140127
+    },
+    "reviewer1_vs_reviewer3": {
+      "agreement": 0.6851851851851852,
+      "kappa": 0.47632629777524244
+    },
+    "reviewer2_vs_reviewer3": {
+      "agreement": 0.7592592592592593,
+      "kappa": 0.5838767042086545
+    }
+  },
+  "agreement_counts": {
+    "split-2-1": 20,
+    "unanimous": 34
+  },
+  "majority_counts": {
+    "FP": 24,
+    "TP": 27,
+    "UNCERTAIN": 3
+  },
+  "by_scope_type": {
+    "category-root": {
+      "records": 8,
+      "unanimous": 1,
+      "split_2_1": 7,
+      "split_1_1_1": 0,
+      "majority_labels": {
+        "FP": 4,
+        "UNCERTAIN": 3,
+        "TP": 1
+      }
+    },
+    "repo-file": {
+      "records": 46,
+      "unanimous": 33,
+      "split_2_1": 13,
+      "split_1_1_1": 0,
+      "majority_labels": {
+        "TP": 26,
+        "FP": 20
+      }
+    }
+  },
+  "by_canonical_class": [
+    {
+      "canonical_class": "agent_role_or_goal_manipulation",
+      "records": 1,
+      "unanimous": 0,
+      "disagreement_rate": 1.0,
+      "majority_labels": {
+        "FP": 1
+      }
+    },
+    {
+      "canonical_class": "credential_or_pii_exposure_surface",
+      "records": 1,
+      "unanimous": 0,
+      "disagreement_rate": 1.0,
+      "majority_labels": {
+        "UNCERTAIN": 1
+      }
+    },
+    {
+      "canonical_class": "prompt_or_instruction_override_surface",
+      "records": 1,
+      "unanimous": 0,
+      "disagreement_rate": 1.0,
+      "majority_labels": {
+        "FP": 1
+      }
+    },
+    {
+      "canonical_class": "ssrf_or_internal_service_reachability",
+      "records": 1,
+      "unanimous": 0,
+      "disagreement_rate": 1.0,
+      "majority_labels": {
+        "TP": 1
+      }
+    },
+    {
+      "canonical_class": "tool_or_skill_poisoning_surface",
+      "records": 1,
+      "unanimous": 0,
+      "disagreement_rate": 1.0,
+      "majority_labels": {
+        "FP": 1
+      }
+    },
+    {
+      "canonical_class": "unsafe_command_or_execution_surface",
+      "records": 1,
+      "unanimous": 0,
+      "disagreement_rate": 1.0,
+      "majority_labels": {
+        "FP": 1
+      }
+    },
+    {
+      "canonical_class": "remote_fetch_or_install_expands_trust_boundary",
+      "records": 4,
+      "unanimous": 2,
+      "disagreement_rate": 0.5,
+      "majority_labels": {
+        "TP": 3,
+        "FP": 1
+      }
+    },
+    {
+      "canonical_class": "broad_external_action_without_approval",
+      "records": 21,
+      "unanimous": 12,
+      "disagreement_rate": 0.4286,
+      "majority_labels": {
+        "TP": 11,
+        "FP": 9,
+        "UNCERTAIN": 1
+      }
+    },
+    {
+      "canonical_class": "autonomous_execution_or_looping",
+      "records": 12,
+      "unanimous": 9,
+      "disagreement_rate": 0.25,
+      "majority_labels": {
+        "TP": 10,
+        "FP": 1,
+        "UNCERTAIN": 1
+      }
+    },
+    {
+      "canonical_class": "identity_rewrite_with_persistent_effect",
+      "records": 11,
+      "unanimous": 11,
+      "disagreement_rate": 0.0,
+      "majority_labels": {
+        "TP": 2,
+        "FP": 9
+      }
+    }
+  ],
+  "noteworthy_records": {
+    "all_uncertain_by_any_reviewer": [
+      "TPFPV1-0002",
+      "TPFPV1-0068",
+      "TPFPV1-0113",
+      "TPFPV1-0171",
+      "TPFPV1-0213",
+      "TPFPV1-0251",
+      "TPFPV1-0332",
+      "TPFPV1-0373"
+    ],
+    "all_three_different": [],
+    "non_unanimous_records": [
+      "TPFPV1-0002",
+      "TPFPV1-0058",
+      "TPFPV1-0063",
+      "TPFPV1-0066",
+      "TPFPV1-0088",
+      "TPFPV1-0089",
+      "TPFPV1-0090",
+      "TPFPV1-0092",
+      "TPFPV1-0094",
+      "TPFPV1-0096",
+      "TPFPV1-0113",
+      "TPFPV1-0114",
+      "TPFPV1-0121",
+      "TPFPV1-0171",
+      "TPFPV1-0213",
+      "TPFPV1-0251",
+      "TPFPV1-0252",
+      "TPFPV1-0286",
+      "TPFPV1-0332",
+      "TPFPV1-0373"
+    ]
+  }
+}

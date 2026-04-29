@@ -1,0 +1,82 @@
+[
+  {
+    "x": "skill_files",
+    "y": "findings_total",
+    "spearman_rho": 0.7797358996748142
+  },
+  {
+    "x": "skill_files",
+    "y": "cluster_issue_instances",
+    "spearman_rho": 0.7789818601086815
+  },
+  {
+    "x": "instruction_surface_files",
+    "y": "findings_total",
+    "spearman_rho": 0.7431410238319763
+  },
+  {
+    "x": "instruction_surface_files",
+    "y": "cluster_issue_instances",
+    "spearman_rho": 0.7429085317449187
+  },
+  {
+    "x": "surface_diversity",
+    "y": "findings_total",
+    "spearman_rho": 0.5793008513435
+  },
+  {
+    "x": "skill_files",
+    "y": "collection_scale_findings",
+    "spearman_rho": 0.5672793605832984
+  },
+  {
+    "x": "instruction_surface_files",
+    "y": "native_findings",
+    "spearman_rho": 0.3133771643857699
+  },
+  {
+    "x": "surface_diversity",
+    "y": "native_findings",
+    "spearman_rho": 0.23819825192618613
+  },
+  {
+    "x": "plugin_manifest_files",
+    "y": "native_findings",
+    "spearman_rho": 0.23043865562889396
+  },
+  {
+    "x": "mcp_manifest_files",
+    "y": "native_findings",
+    "spearman_rho": 0.17939884514196128
+  },
+  {
+    "x": "days_since_last_commit",
+    "y": "findings_total",
+    "spearman_rho": -0.20120319970972433
+  },
+  {
+    "x": "days_since_last_commit",
+    "y": "cluster_issue_instances",
+    "spearman_rho": -0.2005633272704858
+  },
+  {
+    "x": "days_since_last_commit",
+    "y": "native_findings",
+    "spearman_rho": -0.0760510338245304
+  },
+  {
+    "x": "stars",
+    "y": "findings_total",
+    "spearman_rho": 0.22298254429773182
+  },
+  {
+    "x": "stars",
+    "y": "cluster_issue_instances",
+    "spearman_rho": 0.22439898332313138
+  },
+  {
+    "x": "stars",
+    "y": "native_findings",
+    "spearman_rho": 0.18403844506129732
+  }
+]
