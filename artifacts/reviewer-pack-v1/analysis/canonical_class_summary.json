@@ -1,0 +1,42 @@
+[
+  {
+    "canonical_class": "autonomous_execution_or_looping",
+    "count": 1155
+  },
+  {
+    "canonical_class": "unsafe_command_or_execution_surface",
+    "count": 1004
+  },
+  {
+    "canonical_class": "prompt_or_instruction_override_surface",
+    "count": 781
+  },
+  {
+    "canonical_class": "agent_role_or_goal_manipulation",
+    "count": 573
+  },
+  {
+    "canonical_class": "remote_fetch_or_install_expands_trust_boundary",
+    "count": 419
+  },
+  {
+    "canonical_class": "tool_or_skill_poisoning_surface",
+    "count": 369
+  },
+  {
+    "canonical_class": "credential_or_pii_exposure_surface",
+    "count": 216
+  },
+  {
+    "canonical_class": "broad_external_action_without_approval",
+    "count": 64
+  },
+  {
+    "canonical_class": "ssrf_or_internal_service_reachability",
+    "count": 37
+  },
+  {
+    "canonical_class": "identity_rewrite_with_persistent_effect",
+    "count": 11
+  }
+]

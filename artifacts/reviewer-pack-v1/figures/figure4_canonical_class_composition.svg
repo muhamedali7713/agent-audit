@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+
+            <style>
+            .title { font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+            .subtitle { font: 400 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            .axis { stroke: #334155; stroke-width: 1.25; }
+            .grid { stroke: #e2e8f0; stroke-width: 1; }
+            .tick { font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            .label { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+            .legend { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+            .note { font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; }
+            .small { font: 10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            </style>
+            
+<rect x="0.00" y="0.00" width="1000.00" height="620.00" fill="#ffffff" stroke="none" stroke-width="1" rx="0" opacity="1.0"/>
+<text x="40.00" y="34.00" class="title" text-anchor="start">Figure 4. Canonical Class Composition</text>
+<text x="40.00" y="54.00" class="subtitle" text-anchor="start">All canonical classes ranked by clustered issue-instance count</text>
+<text x="70.00" y="113.40" class="tick" text-anchor="start">autonomous execution or looping</text>
+<rect x="340.00" y="99.40" width="640.00" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="988.00" y="113.40" class="small" text-anchor="start">1155 (25.0%)</text>
+<text x="70.00" y="160.40" class="tick" text-anchor="start">unsafe command or execution surface</text>
+<rect x="340.00" y="146.40" width="556.33" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="904.33" y="160.40" class="small" text-anchor="start">1004 (21.7%)</text>
+<text x="70.00" y="207.40" class="tick" text-anchor="start">prompt or instruction override surface</text>
+<rect x="340.00" y="193.40" width="432.76" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="780.76" y="207.40" class="small" text-anchor="start">781 (16.9%)</text>
+<text x="70.00" y="254.40" class="tick" text-anchor="start">agent role or goal manipulation</text>
+<rect x="340.00" y="240.40" width="317.51" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="665.51" y="254.40" class="small" text-anchor="start">573 (12.4%)</text>
+<text x="70.00" y="301.40" class="tick" text-anchor="start">remote fetch or install expands trust boundary</text>
+<rect x="340.00" y="287.40" width="232.17" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="580.17" y="301.40" class="small" text-anchor="start">419 (9.1%)</text>
+<text x="70.00" y="348.40" class="tick" text-anchor="start">tool or skill poisoning surface</text>
+<rect x="340.00" y="334.40" width="204.47" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="552.47" y="348.40" class="small" text-anchor="start">369 (8.0%)</text>
+<text x="70.00" y="395.40" class="tick" text-anchor="start">credential or pii exposure surface</text>
+<rect x="340.00" y="381.40" width="119.69" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="467.69" y="395.40" class="small" text-anchor="start">216 (4.7%)</text>
+<text x="70.00" y="442.40" class="tick" text-anchor="start">broad external action without approval</text>
+<rect x="340.00" y="428.40" width="35.46" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="383.46" y="442.40" class="small" text-anchor="start">64 (1.4%)</text>
+<text x="70.00" y="489.40" class="tick" text-anchor="start">ssrf or internal service reachability</text>
+<rect x="340.00" y="475.40" width="20.50" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="368.50" y="489.40" class="small" text-anchor="start">37 (0.8%)</text>
+<text x="70.00" y="536.40" class="tick" text-anchor="start">identity rewrite with persistent effect</text>
+<rect x="340.00" y="522.40" width="6.10" height="25.85" fill="#7c3aed" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="354.10" y="536.40" class="small" text-anchor="start">11 (0.2%)</text>
+<text x="70.00" y="604.00" class="note" text-anchor="start">The top five classes account for about 85% of clustered issue instances.</text>
+</svg>

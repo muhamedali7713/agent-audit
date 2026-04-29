@@ -1,0 +1,18 @@
+{
+  "metadata_rows_available": 509,
+  "last_commit_at_available": 509,
+  "stars_available": 507,
+  "forks_available": 507,
+  "license_available": 452,
+  "archived_available": 509,
+  "archived_true": 1,
+  "recently_active_90d": 475,
+  "median_days_since_last_commit": 9,
+  "stale_buckets": {
+    "0-30d": 404,
+    "31-90d": 71,
+    "91-180d": 21,
+    "181-365d": 9,
+    "365d+": 4
+  }
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="560" viewBox="0 0 840 560">
+
+            <style>
+            .title { font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+            .subtitle { font: 400 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            .axis { stroke: #334155; stroke-width: 1.25; }
+            .grid { stroke: #e2e8f0; stroke-width: 1; }
+            .tick { font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            .label { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+            .legend { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+            .note { font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; }
+            .small { font: 10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            </style>
+            
+<rect x="0.00" y="0.00" width="840.00" height="560.00" fill="#ffffff" stroke="none" stroke-width="1" rx="0" opacity="1.0"/>
+<text x="40.00" y="34.00" class="title" text-anchor="start">Figure 5. Cohort Comparison</text>
+<text x="40.00" y="54.00" class="subtitle" text-anchor="start">Curated instruction-centric cohorts versus the broader discovery cohort</text>
+<line x1="70.00" y1="500.00" x2="810.00" y2="500.00" stroke="#e2e8f0" stroke-width="1" opacity="1.0"/>
+<text x="62.00" y="504.00" class="tick" text-anchor="end">0.00</text>
+<line x1="70.00" y1="390.67" x2="810.00" y2="390.67" stroke="#e2e8f0" stroke-width="1" opacity="1.0"/>
+<text x="62.00" y="394.67" class="tick" text-anchor="end">0.20</text>
+<line x1="70.00" y1="281.33" x2="810.00" y2="281.33" stroke="#e2e8f0" stroke-width="1" opacity="1.0"/>
+<text x="62.00" y="285.33" class="tick" text-anchor="end">0.40</text>
+<line x1="70.00" y1="172.00" x2="810.00" y2="172.00" stroke="#e2e8f0" stroke-width="1" opacity="1.0"/>
+<text x="62.00" y="176.00" class="tick" text-anchor="end">0.60</text>
+<line x1="70.00" y1="90.00" x2="70.00" y2="500.00" stroke="#334155" stroke-width="1.4" opacity="1.0"/>
+<line x1="70.00" y1="500.00" x2="810.00" y2="500.00" stroke="#334155" stroke-width="1.4" opacity="1.0"/>
+<text x="440.00" y="540.00" class="label" text-anchor="middle">Cohort</text>
+<text x="22.00" y="295.00" class="label" text-anchor="middle" transform="rotate(-90.00 22.00 295.00)">Repository rate</text>
+<rect x="199.20" y="153.60" width="103.60" height="346.40" fill="#0f766e" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="251.00" y="147.60" class="small" text-anchor="middle">0.63</text>
+<rect x="310.80" y="424.22" width="103.60" height="75.78" fill="#dc2626" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="362.60" y="418.22" class="small" text-anchor="middle">0.14</text>
+<text x="255.00" y="518.00" class="tick" text-anchor="middle">Curated</text>
+<rect x="569.20" y="341.90" width="103.60" height="158.10" fill="#0f766e" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="621.00" y="335.90" class="small" text-anchor="middle">0.29</text>
+<rect x="680.80" y="489.28" width="103.60" height="10.72" fill="#dc2626" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="732.60" y="483.28" class="small" text-anchor="middle">0.02</text>
+<text x="625.00" y="518.00" class="tick" text-anchor="middle">Broad</text>
+<rect x="604.00" y="92.00" width="170.00" height="40.00" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" rx="8" opacity="1.0"/>
+<rect x="620.00" y="102.00" width="18.00" height="12.00" fill="#0f766e" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="648.00" y="112.00" class="legend" text-anchor="start">Clustered-issue repo rate</text>
+<rect x="620.00" y="122.00" width="18.00" height="12.00" fill="#dc2626" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="648.00" y="132.00" class="legend" text-anchor="start">Native-finding repo rate</text>
+<text x="70.00" y="544.00" class="note" text-anchor="start">Curated cohorts are materially more signal-rich than the broad discovery cohort.</text>
+</svg>

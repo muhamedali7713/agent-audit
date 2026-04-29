@@ -28,6 +28,18 @@ manifests.
 Sergey Gordeychik  
 scadastrangelove@gmail.com
 
+## Published artifacts
+
+Publication-facing artifacts live in [`artifacts/`](./artifacts/).
+
+- [`artifacts/reviewer-pack-v1/`](./artifacts/reviewer-pack-v1/):
+  lightweight reviewer pack with the current manuscript, figures, summary
+  analysis outputs, and adjudication summaries.
+- [`artifacts/article-support-dataset-v1/`](./artifacts/article-support-dataset-v1/):
+  full article-support dataset with the 509-repository corpus list,
+  metadata snapshots, sanitized corpus-wide `scan-project` results, and
+  TP/FP verification / adjudication exports.
+
 ## Why this project exists
 
 The immediate problem is practical, not purely academic: coding-agent usage

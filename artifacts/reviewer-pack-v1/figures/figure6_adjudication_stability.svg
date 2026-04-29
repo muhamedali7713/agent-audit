@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560">
+
+            <style>
+            .title { font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+            .subtitle { font: 400 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            .axis { stroke: #334155; stroke-width: 1.25; }
+            .grid { stroke: #e2e8f0; stroke-width: 1; }
+            .tick { font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            .label { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+            .legend { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+            .note { font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; }
+            .small { font: 10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+            </style>
+            
+<rect x="0.00" y="0.00" width="920.00" height="560.00" fill="#ffffff" stroke="none" stroke-width="1" rx="0" opacity="1.0"/>
+<text x="40.00" y="34.00" class="title" text-anchor="start">Figure 6. Adjudication Stability by Evidence Type</text>
+<text x="40.00" y="54.00" class="subtitle" text-anchor="start">Unanimity, split decisions, and majority-label composition in the reviewed subset</text>
+<text x="265.00" y="82.00" class="legend" text-anchor="middle">Consensus structure</text>
+<text x="695.00" y="82.00" class="legend" text-anchor="middle">Majority labels</text>
+<line x1="70.00" y1="90.00" x2="70.00" y2="500.00" stroke="#334155" stroke-width="1.3" opacity="1.0"/>
+<line x1="70.00" y1="500.00" x2="460.00" y2="500.00" stroke="#334155" stroke-width="1.3" opacity="1.0"/>
+<line x1="500.00" y1="90.00" x2="500.00" y2="500.00" stroke="#334155" stroke-width="1.3" opacity="1.0"/>
+<line x1="500.00" y1="500.00" x2="890.00" y2="500.00" stroke="#334155" stroke-width="1.3" opacity="1.0"/>
+<rect x="122.50" y="384.13" width="90.00" height="115.87" fill="#f59e0b" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<rect x="122.50" y="90.00" width="90.00" height="294.13" fill="#16a34a" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="167.50" y="518.00" class="tick" text-anchor="middle">repo-file</text>
+<text x="167.50" y="84.00" class="small" text-anchor="middle">33/46</text>
+<rect x="552.50" y="268.26" width="90.00" height="231.74" fill="#0f766e" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<rect x="552.50" y="90.00" width="90.00" height="178.26" fill="#dc2626" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<rect x="552.50" y="90.00" width="90.00" height="0.00" fill="#94a3b8" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="597.50" y="518.00" class="tick" text-anchor="middle">repo-file</text>
+<text x="597.50" y="88.00" class="small" text-anchor="middle">26/20/0</text>
+<rect x="317.50" y="141.25" width="90.00" height="358.75" fill="#f59e0b" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<rect x="317.50" y="90.00" width="90.00" height="51.25" fill="#16a34a" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="362.50" y="518.00" class="tick" text-anchor="middle">category-root</text>
+<text x="362.50" y="84.00" class="small" text-anchor="middle">1/8</text>
+<rect x="747.50" y="448.75" width="90.00" height="51.25" fill="#0f766e" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<rect x="747.50" y="243.75" width="90.00" height="205.00" fill="#dc2626" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<rect x="747.50" y="90.00" width="90.00" height="153.75" fill="#94a3b8" stroke="none" stroke-width="1" rx="4" opacity="1.0"/>
+<text x="792.50" y="518.00" class="tick" text-anchor="middle">category-root</text>
+<text x="792.50" y="88.00" class="small" text-anchor="middle">1/4/3</text>
+<rect x="70.00" y="522.00" width="14.00" height="10.00" fill="#16a34a" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="92.00" y="531.00" class="small" text-anchor="start">Unanimous</text>
+<rect x="162.00" y="522.00" width="14.00" height="10.00" fill="#f59e0b" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="184.00" y="531.00" class="small" text-anchor="start">Split 2-1</text>
+<rect x="284.00" y="522.00" width="14.00" height="10.00" fill="#0f766e" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="306.00" y="531.00" class="small" text-anchor="start">Majority TP</text>
+<rect x="392.00" y="522.00" width="14.00" height="10.00" fill="#dc2626" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="414.00" y="531.00" class="small" text-anchor="start">Majority FP</text>
+<rect x="521.00" y="522.00" width="14.00" height="10.00" fill="#94a3b8" stroke="none" stroke-width="1" rx="2" opacity="1.0"/>
+<text x="543.00" y="531.00" class="small" text-anchor="start">Majority UNCERTAIN</text>
+<text x="70.00" y="548.00" class="note" text-anchor="start">Aggregate packets are much less stable in the reviewed subset, but n=8 is small.</text>
+</svg>

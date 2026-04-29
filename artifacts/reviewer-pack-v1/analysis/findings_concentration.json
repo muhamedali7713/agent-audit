@@ -1,0 +1,60 @@
+{
+  "repo_gini": 0.9402400790711567,
+  "cluster_issue_gini": 0.9395775585794011,
+  "top_1pct_repos": {
+    "repos": 6,
+    "share": 0.6322620519159456
+  },
+  "top_5pct_repos": {
+    "repos": 26,
+    "share": 0.8312731767614339
+  },
+  "top_10pct_repos": {
+    "repos": 51,
+    "share": 0.900082406262876
+  },
+  "top_10_rules": [
+    {
+      "rule_id": "atr.excessive-autonomy.agent-resource-exhaustion-detection",
+      "count": 958
+    },
+    {
+      "rule_id": "atr.privilege-escalation.shell-metacharacter-injection-in-tool-arguments",
+      "count": 733
+    },
+    {
+      "rule_id": "atr.prompt-injection.indirect-reference-instruction-reversal",
+      "count": 331
+    },
+    {
+      "rule_id": "atr.agent-manipulation.cross-agent-attack-detection",
+      "count": 299
+    },
+    {
+      "rule_id": "aguara.external-download.remote-sdk-or-script-fetch-as-agent-input",
+      "count": 246
+    },
+    {
+      "rule_id": "atr.prompt-injection.system-prompt-override-injection-via-mcp-tool",
+      "count": 220
+    },
+    {
+      "rule_id": "atr.prompt-injection.indirect-prompt-injection-via-external-content",
+      "count": 202
+    },
+    {
+      "rule_id": "atr.tool-poisoning.mcp-tool-description-important-tag-cross-tool-shadowing-atta",
+      "count": 201
+    },
+    {
+      "rule_id": "atr.agent-manipulation.agent-goal-hijacking-detection",
+      "count": 178
+    },
+    {
+      "rule_id": "cisco-pg.pii_exposure.pg-pii-ssn-harvesting",
+      "count": 157
+    }
+  ],
+  "unmapped_findings": 28,
+  "unmapped_clusters": 8
+}
